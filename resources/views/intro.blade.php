@@ -14,7 +14,7 @@
     </div>
     <br>   
     <div class="text-center">
-        <button type="button" class="btn btn-danger" role="link" onclick="window.location='/fullstack-utn-laravel-project/public/welcome'">
+        <button type="button" class="btn btn-danger" role="link" onclick="window.location='/sistema-reporte-incidentes/public/welcome'">
             Ir a Laravel Homepage
         </button>
     </div>
