@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,13 @@ Route::get('/welcome', function () {
 Route::get('/', function () {
     return view('intro');
 });
+
+// Route::get('/clientes', [\App\Http\Controllers\ClientesController::class, 'index']);
+// Route::get('/clientes/create', [\App\Http\Controllers\ClientesController::class, 'create']);
+// Route::post('/clientes', [\App\Http\Controllers\ClientesController::class, 'store']);
+// Route::get('/clientes/:id', [\App\Http\Controllers\ClientesController::class, 'show']);
+// Route::get('/clientes/:id/edit', [\App\Http\Controllers\ClientesController::class, 'edit']);
+// Route::put('/clientes/:id', [\App\Http\Controllers\ClientesController::class, 'update']);
+// Route::delete('/clientes/:id', [\App\Http\Controllers\ClientesController::class, 'destroy']);
+
+Route::resource('clientes', [\App\Http\Controllers\ClientesController::class]);
