@@ -30,4 +30,11 @@ Route::get('/', function () {
 // Route::put('/clientes/:id', [\App\Http\Controllers\ClientesController::class, 'update']);
 // Route::delete('/clientes/:id', [\App\Http\Controllers\ClientesController::class, 'destroy']);
 
-Route::resource('clientes', [\App\Http\Controllers\ClientesController::class]);
+Route::resource('clientes', \App\Http\Controllers\ClientesController::class);
+
+// Route::resource('clientes', \App\Http\Controllers\ClientesController::class)
+//     -> except (['edit', 'update', 'destroy']);
+
+// Route::resource('clientes', \App\Http\Controllers\ClientesController::class)
+//     -> only (['index']);
+
