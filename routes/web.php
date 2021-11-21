@@ -17,8 +17,6 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-// Función de callbacks (o expresión lambda)
-// Endpoints
 Route::get('/', function () {
     return view('intro');
 });
